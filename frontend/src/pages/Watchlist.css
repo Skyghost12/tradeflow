@@ -1,0 +1,81 @@
+.watchlist__add {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  max-width: 400px;
+}
+
+.watchlist__add input {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 11px var(--space-3);
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.watchlist__add input:focus {
+  border-color: var(--bull);
+}
+
+.watchlist-table__head,
+.watchlist-table__row {
+  display: grid;
+  grid-template-columns: 100px 60px 100px 120px 80px 100px 40px;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  min-width: 640px;
+}
+
+.watchlist-table {
+  overflow-x: auto;
+}
+
+.watchlist-table__head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.watchlist-table__row {
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.watchlist-table__row:last-child {
+  border-bottom: none;
+}
+
+.watchlist-table__row:hover {
+  background: var(--bg-surface-raised);
+}
+
+.watchlist-table__pair {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trend-up { color: var(--bull); }
+.trend-down { color: var(--bear); }
+
+.watchlist-table__remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  justify-self: end;
+}
+
+.watchlist-table__remove:hover {
+  background: var(--bear-dim);
+  color: var(--bear);
+}

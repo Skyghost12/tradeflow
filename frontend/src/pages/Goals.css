@@ -1,0 +1,131 @@
+.goals-page__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.goals-page__tabs {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.goals-tab {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  text-transform: capitalize;
+}
+
+.goals-tab--active {
+  background: var(--bull-dim);
+  color: var(--bull);
+  border-color: rgba(0, 217, 160, 0.3);
+}
+
+.goals-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+.goal-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.goal-card__timeframe {
+  display: block;
+  font-size: 11px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.goal-card__head h4 {
+  font-size: 16px;
+}
+
+.goal-card__head button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+.goal-card__head button:hover {
+  background: var(--bear-dim);
+  color: var(--bear);
+}
+
+.goal-card__progress {
+  margin-bottom: var(--space-3);
+}
+
+.goal-card__bar-track {
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.goal-card__bar-fill {
+  height: 100%;
+  background: var(--bull);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-base) var(--ease-out);
+}
+
+.goal-card__bar-fill--achieved {
+  background: var(--gold);
+}
+
+.goal-card__progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.goal-card__achieved {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: var(--space-3);
+}
+
+.goal-card__dates {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.goal-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.goal-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}

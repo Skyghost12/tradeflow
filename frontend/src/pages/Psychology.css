@@ -1,0 +1,82 @@
+.psychology__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.psychology__insight {
+  margin-bottom: var(--space-5);
+}
+
+.psychology__insight h3 {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.psychology__insight p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.psychology__insight strong {
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.psychology__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.psychology__toolbar h3 {
+  font-size: 16px;
+}
+
+.psych-table {
+  overflow-x: auto;
+}
+
+.psych-table__head,
+.psych-table__row {
+  display: grid;
+  grid-template-columns: 110px 100px 100px 100px 90px 80px 100px;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  min-width: 680px;
+}
+
+.psych-table__head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.psych-table__row {
+  font-size: 13px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.psych-table__row:last-child {
+  border-bottom: none;
+}
+
+.psych-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.psych-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}

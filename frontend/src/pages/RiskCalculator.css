@@ -1,0 +1,93 @@
+.risk-calculator__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.risk-calculator__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.risk-calculator__head svg {
+  color: var(--bull);
+  font-size: 20px;
+}
+
+.risk-calculator__head h3 {
+  font-size: 17px;
+}
+
+.risk-calculator__intro {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-5);
+  line-height: 1.6;
+}
+
+.risk-calculator__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.risk-calculator__result h3 {
+  font-size: 17px;
+  margin-bottom: var(--space-4);
+}
+
+.risk-calculator__placeholder {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: var(--space-6) 0;
+  text-align: center;
+}
+
+.risk-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.risk-result__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.risk-result__item span {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.risk-result__item strong {
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+
+.risk-result__item--primary {
+  background: var(--bull-dim);
+  border-color: rgba(0, 217, 160, 0.25);
+}
+
+.risk-result__item--primary span {
+  color: var(--bull);
+}
+
+.risk-result__item--primary strong {
+  color: var(--bull);
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .risk-calculator__grid {
+    grid-template-columns: 1fr;
+  }
+}

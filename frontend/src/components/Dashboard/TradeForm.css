@@ -1,0 +1,26 @@
+.trade-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.trade-form__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.trade-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .trade-form__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,99 @@
+.trade-details__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-5);
+}
+
+.trade-details__back:hover {
+  color: var(--text-primary);
+}
+
+.trade-details__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.trade-details__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.trade-details__title h2 {
+  font-size: 26px;
+}
+
+.trade-details__date {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.trade-details__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.trade-details__grid h3 {
+  font-size: 15px;
+  margin-bottom: var(--space-4);
+  color: var(--text-secondary);
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.detail-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.detail-list > div > span:first-child {
+  color: var(--text-muted);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.trade-details__profit--bull { color: var(--bull); font-weight: 600; }
+.trade-details__profit--bear { color: var(--bear); font-weight: 600; }
+.trade-details__profit--neutral { color: var(--text-muted); }
+
+.trade-details__screenshot-card,
+.trade-details__notes-card {
+  grid-column: 1 / -1;
+}
+
+.trade-details__screenshot-card img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.trade-details__notes-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+@media (max-width: 720px) {
+  .trade-details__grid {
+    grid-template-columns: 1fr;
+  }
+}

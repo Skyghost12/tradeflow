@@ -1,0 +1,36 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badge--bull {
+  background: var(--bull-dim);
+  color: var(--bull);
+}
+
+.badge--bear {
+  background: var(--bear-dim);
+  color: var(--bear);
+}
+
+.badge--gold {
+  background: var(--gold-dim);
+  color: var(--gold);
+}
+
+.badge--info {
+  background: rgba(77, 159, 255, 0.12);
+  color: var(--info);
+}
+
+.badge--neutral {
+  background: var(--bg-surface-raised);
+  color: var(--text-secondary);
+}

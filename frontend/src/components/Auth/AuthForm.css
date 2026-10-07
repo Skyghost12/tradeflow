@@ -1,0 +1,46 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.auth-form__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.auth-form__row a {
+  color: var(--bull);
+  font-weight: 600;
+}
+
+.auth-form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+}
+
+.auth-form__error {
+  background: var(--bear-dim);
+  color: var(--bear);
+  font-size: 13px;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 77, 109, 0.25);
+}
+
+.auth-form__success {
+  background: var(--bull-dim);
+  color: var(--bull);
+  font-size: 13px;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 217, 160, 0.25);
+}
+
+.auth-form__submit {
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,142 @@
+/* ============================================
+   TRADEFLOW DESIGN TOKENS
+   Dark trading-terminal theme. Every component
+   CSS file references these variables — never
+   hardcode a color or font value elsewhere.
+   ============================================ */
+
+:root {
+  /* Color: base */
+  --bg-base: #0a0e14;
+  --bg-surface: #10151f;
+  --bg-surface-raised: #161c29;
+  --bg-glass: rgba(22, 28, 41, 0.6);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Color: text */
+  --text-primary: #e8ecf1;
+  --text-secondary: #9aa5b5;
+  --text-muted: #6b7785;
+
+  /* Color: signal */
+  --bull: #00d9a0;
+  --bull-dim: rgba(0, 217, 160, 0.12);
+  --bear: #ff4d6d;
+  --bear-dim: rgba(255, 77, 109, 0.12);
+  --gold: #ffb648;
+  --gold-dim: rgba(255, 182, 72, 0.12);
+  --info: #4d9fff;
+
+  /* Typography */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-glow-bull: 0 0 32px rgba(0, 217, 160, 0.18);
+  --shadow-glow-gold: 0 0 32px rgba(255, 182, 72, 0.18);
+
+  /* Layout */
+  --sidebar-width: 248px;
+  --sidebar-width-collapsed: 76px;
+  --header-height: 68px;
+  --max-content-width: 1400px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--bull-dim);
+  color: var(--bull);
+}
+
+/* Visible keyboard focus everywhere — accessibility floor, not optional */
+:focus-visible {
+  outline: 2px solid var(--info);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-full);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,58 @@
+.econ-calendar__filters {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.econ-table {
+  overflow-x: auto;
+}
+
+.econ-table__head,
+.econ-table__row {
+  display: grid;
+  grid-template-columns: 2fr 90px 100px 90px 90px 90px 100px;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  min-width: 800px;
+}
+
+.econ-table__head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.econ-table__row {
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 13px;
+}
+
+.econ-table__row:last-child {
+  border-bottom: none;
+}
+
+.econ-table__row:hover {
+  background: var(--bg-surface-raised);
+}
+
+.econ-table__event {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.econ-table__event span:first-child {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.econ-table__date {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}

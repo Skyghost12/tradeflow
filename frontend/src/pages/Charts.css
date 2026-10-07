@@ -1,0 +1,40 @@
+.charts-page__tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  overflow-x: auto;
+}
+
+.charts-page__tab {
+  padding: 9px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.charts-page__tab:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.charts-page__tab--active {
+  background: var(--bull-dim);
+  color: var(--bull);
+  border-color: rgba(0, 217, 160, 0.3);
+}
+
+.charts-page__card {
+  height: 72vh;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.tradingview-widget-container {
+  height: 100%;
+  width: 100%;
+}
